@@ -1,0 +1,67 @@
+@import url("../../App.css");
+
+.menuCardDashBoard {
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre elementos */
+  height: auto;
+  text-align: center;
+
+  /*padding: 0px;
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: auto;*/
+ 
+  
+}
+
+
+@media (max-width: 768px) {
+  .menuCardDashBoard {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+.menuCardDashBoard a{
+  text-decoration: none;
+  color: var(--Lunar-Dust)
+}
+
+.menuCardDashBoard a > article {
+  background-color: var(--Midnight-Express);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 0px;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  text-align: center;
+  
+}
+
+.menuCardDashBoard a > article:hover {
+  background-color: var(--Bright-Zenith);
+  border: 8px solid var(--Midnight-Express);
+  border-radius: 30px;
+  padding: 0px;
+  margin: 2px;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: var(--Gulf-Blue);
+  font-weight: bold;
+  
+}

@@ -1,0 +1,12 @@
+
+.toDoPage {
+        background-color: var(--Course-wool);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 4fr;
+        align-items: start;
+        justify-content: center;
+        height: auto;
+        color: var(--Lunar-Dust);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }

@@ -1,0 +1,21 @@
+.MenuLeftBarra {
+
+  padding-top: 20px;
+  padding-left: 10px;
+  height: max-content;
+
+}
+
+.MenuLeftBarra a{
+  text-decoration: none;
+  color: var(--Lunar-Dust);
+}
+
+
+.MenuLeftBarra a article img{
+  animation-play-state: paused;
+}
+
+.MenuLeftBarra a article img:hover{
+  animation-play-state: running;
+}

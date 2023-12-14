@@ -1,0 +1,124 @@
+@import url("../../App.css");
+
+.listLeftBarra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--Midnight-Express);
+  border-radius: 20px;
+  height: 30px;
+  opacity: 0.5;
+  transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+.listLeftBarra:hover{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*margin: 20px;*/
+  border: 2px solid var(--Midnight-Express);
+  background-color: var(--Bright-Zenith);
+  opacity: 1;
+  border-radius: 20px;
+  color: var(--Bluebell);
+  height: 30px;
+  margin-left: 45px;
+  opacity: 1;
+  
+
+}
+
+.listLeftBarra  > p {
+  
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+    font-size: var(--sm);
+
+}
+
+/*
+.iconLeftBarra {
+  display: none;
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+}
+
+.staticiconleft {
+  display: inline-block;
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+}
+.iconLeftBarra:hover {
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+  animation: none;
+}
+
+.staticiconleft:hover + .iconLeftBarra{
+  display: inline-block;
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+ 
+}*/
+
+.staticiconleft {
+  /* Estilos para el primer icono (estático) */
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+}
+
+.iconLeftBarra {
+  /* Estilos para el segundo icono (aparece en hover) */
+  display: none;
+  padding: 5px;
+  max-width: auto;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+  margin-right: 0px;
+}
+
+.listLeftBarra:hover .staticiconleft {
+  display: none;
+}
+
+.listLeftBarra:hover .iconLeftBarra {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+}

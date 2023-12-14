@@ -1,0 +1,71 @@
+.toDoList img{
+   
+    padding: 5px;
+  margin-left: 20px;
+
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid var(--Moon-White);
+  background-color: var(--Moon-White);
+}
+
+.toDoList {
+ 
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: auto;
+}
+
+.toDoList-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 20px);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.toDoList-p--complete{
+  text-decoration:line-through;
+}
+
+.Icon{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Icon-check {
+  color: var(--Fluorescent-Red);
+  text-decoration:line-through;
+}
+
+.Icon-check:hover {
+  color: var(--Bluebell);
+  text-decoration:line-through;
+}
+
+.Icon-check--active{
+  color: var(--Wild-Caribbean-Green);
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.Icon-check--active:hover{
+  color: var(--Wild-Caribbean-Green);
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.Icon-delete{
+  color: var(--Moon-White);
+}
+
+.Icon-delete:hover{
+  color: var(--Fluorescent-Red);
+}

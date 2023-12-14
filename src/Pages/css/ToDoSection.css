@@ -1,0 +1,105 @@
+@import url("../../App.css");
+
+.toDoSection {
+    background-color: var( --Course-wool);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Lunar-Dust);
+    margin: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .toDoSection .toDoHeader {
+    font-size: var(--xxlg);
+    margin: 20px;
+    align-self: center;
+  }
+  
+  .toDoSection input {
+    font-size: var(--sm);
+    color: var( --Gulf-Blue);
+    border-radius: 10px;
+    border: 1px solid var(--Moon-White);
+    width: 70%;
+    height: 20px;
+    margin: 20px;
+    align-self: center;
+    
+  }
+
+  .toDoSection article button{
+    border: 1px solid var(--Moon-White);
+    border-radius: 20px;
+    background-color: var(--Midnight-Express);
+    color: var(--Moon-White);
+    font-size: var(--sm);
+    padding: 10px;
+    margin-left: 20px;
+    width: 150px;
+  }
+
+  .toDoSection article button:hover{
+    border: 1px solid var(--Moon-White);
+    background-color: var(--Bright-Zenith);
+    color: var(--Gulf-Blue);
+    font-size: var(--md);
+    font-weight: bold;
+    
+    
+  }
+
+  .toDoSection .counterToDo {
+   
+    font-size: var(--lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+  }
+  .toDoSection .counterToDo p{
+    color: var(--Moon-White);
+    margin: 5px;
+ }
+
+
+ .withoutToDos{
+  display: none;
+}
+
+.counterInfo 
+{
+  display: none;
+}
+
+.withoutToDosShow
+{
+  display: block;
+}
+
+
+
+  .toDoSection .counterToDo span{
+     font-weight: bold;
+     margin: 0px 3px 3px 3px;
+     color: var(--Wild-Caribbean-Green);
+  }
+
+
+
+  .toDoSectionList {
+    border-radius: 20px;
+    border: 8px solid var(--Midnight-Express);
+  }
+
+  .toDoSectionList ul article{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  
