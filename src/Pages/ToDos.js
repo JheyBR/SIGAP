@@ -12,16 +12,16 @@ import React from 'react';
 import '../App.css';
 import './css/ToDos.css';
 
-/*localStorage.setItem('LSListToDO, defaultListToDo');
-localStorage.removeItem('LSListToDO');
+/*localStorage.setItem('LSListToDO_V1, defaultListToDo');
+localStorage.removeItem('LSListToDO_V1');
 const stToDo = JSON.stringify(defaulListToDo)
-  localStorage.setItem('LSListToDO', stToDo)*/
+  localStorage.setItem('LSListToDO_V1 ', stToDo)*/
 
-
+   
 function ToDos() {
 
-  let stToDo = JSON.stringify(defaulListToDo)
-  localStorage.setItem('LSListToDO', stToDo)
+  /*let stToDo = JSON.stringify(defaulListToDo)
+  localStorage.setItem('LSListToDO', stToDo)*/
 
 
     let parsedToDo;   
@@ -36,11 +36,11 @@ function ToDos() {
     }
 
   const [searchValue, setSearchValue] = React.useState('');
-  const [ToDos, setToDos]  = React.useState(parsedToDo);
+  const [ToDos, setToDos]  = React.useState(parsedToDo); 
  
 
   const searchedToDo = ToDos.filter(
-    (toDo)=> { 
+    (toDo)=> {  
       const toDotext = toDo.titleToDo.toLowerCase();
       const searchtoDo = searchValue.toLowerCase();
       return toDotext.includes(searchtoDo);
@@ -48,7 +48,10 @@ function ToDos() {
   );
 
 const saveToDos = (newToDos) => {
-  localStorage.setItem('LSListToDO', JSON.stringify(newToDos))
+  localStorage.setItem('LSListToDO', 
+  JSON.stringify(newToDos)) 
+  setToDos(newToDos);
+  console.log('prueba ',newToDos);
 }
 
   const completeToDo = (titleToDo) => {
@@ -57,7 +60,7 @@ const saveToDos = (newToDos) => {
       (toDo) => toDo.titleToDo === titleToDo
     );
     newToDos[toDoIndex].completed = true;
-      setToDos(newToDos);
+      saveToDos(newToDos);
   };
 
   const deleteToDo = (titleToDo) => {
@@ -67,10 +70,10 @@ const saveToDos = (newToDos) => {
       (toDo) => toDo.titleToDo === titleToDo
     );
     newToDos.splice(toDoIndex, 1);
-      setToDos(newToDos);
-      console.log(newToDos);
+    saveToDos(newToDos);
   
   };
+
 
   const todoTotal = ToDos.length;
   const todocompleted = ToDos.filter(
