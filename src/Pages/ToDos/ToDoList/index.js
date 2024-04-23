@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/ToDoList.css';
+import './ToDoList.css';
 import { CiCircleRemove, CiCircleCheck } from "react-icons/ci";
 
 function ToDoLIst(props) {

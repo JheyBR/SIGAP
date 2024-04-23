@@ -1,4 +1,4 @@
-@import url("../../App.css");
+@import url("../../../App.css");
 
 .toDoSection {
     background-color: var( --Course-wool);
@@ -90,16 +90,16 @@
 
 
 
-  .toDoSectionList {
+  .toDoSectionList--other{
     border-radius: 20px;
     border: 8px solid var(--Midnight-Express);
   }
 
-  .toDoSectionList ul article{
+  /* .toDoSectionList ul article{
     display: flex; 
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
-  }
+  } */
 
   

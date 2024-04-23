@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import './css/ToDos.css';
+//import '../../App.css';
+import '../ToDos.css';
 
 
 

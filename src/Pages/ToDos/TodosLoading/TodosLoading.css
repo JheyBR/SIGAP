@@ -1,0 +1,59 @@
+@import url("../../../App.css");
+
+/* Estilos para el ícono estático, inicialmente oculto */
+.toDoSectionList--skl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var( --Course-wool);
+    color: var(--Lunar-Dust);
+    margin: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.sklLoading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    height: auto;
+    width: 25rem;
+    border-radius: 50px;
+    border: 2px solid var(--Gulf-Blue);
+    background-color: var(--Midnight-Express);
+}
+
+.sklLoading .sklDiv {
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+   
+}
+
+.sklLoading .sklDiv .titleSklLoad{
+       
+    justify-self: center;
+   
+}
+
+.sklLoading .sklDiv .pSklLoad{
+    margin: 1rem;
+    justify-self: center;
+    align-self: center;
+   
+}
+
+article .sklimgLoad {
+    margin: 10px 20px 10px 10px;
+    padding: 5px;
+    height: 5rem;
+    border-radius: 60px;
+    border: 5px solid var(--Gulf-Blue);
+    background-color: var(--Moon-White);
+    transition: visibility 0.3s;
+  }
+ 

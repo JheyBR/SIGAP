@@ -8,10 +8,12 @@ import { MenuCardsDashBoard } from './ppal/MenuCardDashBoard';
 import { CardDashBoard } from './ppal/CardDashBoard';
 import { defaulttitlecards } from './App_data';
 import { defaulttitleleftbarra } from './App_data';
+import { defaultImgUseEffect } from './App_data';
+
 import React from 'react';
 import {BrowserRouter as Router, Link, Routes, Route} from 'react-router-dom'
 import './App.css';
-import ToDos from './Pages/ToDos';
+import ToDos from './Pages/ToDos/index';
 
 /*ESta es una prueba*/
 

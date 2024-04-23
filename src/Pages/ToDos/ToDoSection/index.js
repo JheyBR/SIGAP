@@ -1,8 +1,8 @@
 
 import React from 'react';
-import '../App.css';
-import './css/ToDoSection.css';
-import ToDoCounter from './ToDoCounter';
+import '../../../App.css';
+import './ToDoSection.css';
+import ToDoCounter from '../ToDoCounter';
 
 
 function ToDoSection(props) {
@@ -34,7 +34,7 @@ function ToDoSection(props) {
                   console.log(event.target) 
                 }
               }
-              >Agregar
+              >
                               
             </button>
         </article>
@@ -45,8 +45,13 @@ function ToDoSection(props) {
           valToDo={props.valToDo}
                     
         />
+{/* {`toDoSectionList
+        ${(props.todoRest===0) && "toDoSectionLis--skl"}`} */}
+
+        
+
       </div>
-      <div className="toDoSectionList">
+      <div className={`${props.todoRest === 0 ? 'toDoSectionList--skl' : 'toDoSectionList--other'}`}>
         <ul className="toDoSectionListUl">
           {props.children}
         </ul>

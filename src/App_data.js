@@ -36,6 +36,15 @@
     
   ] 
   export { defaulttitlecards, defaulttitleleftbarra};
+
+  const defaultImgUseEffect =[
+    /*https://www.flaticon.es/iconos-animados-mas-descargados*/
+    {imgDescUSeEffec: 'Loading', imgUseEffec: 'https://cdn-icons-gif.flaticon.com/8800/8800954.gif'},
+    {imgDescUSeEffec: 'Error', imgUseEffec: 'https://cdn-icons-gif.flaticon.com/6569/6569130.gif'},
+    {imgDescUSeEffec: 'Empty', imgUseEffec: 'https://cdn-icons-gif.flaticon.com/8716/8716767.gif'},
+    
+  ] 
+  export {defaultImgUseEffect};
   
   const defaulListToDo =[ 
     {titleToDo: 'Revisar el PH en Enrtrada de Agua y Tanques', checkToDo:'Agregar, Modificar', stateToDo:'https://cdn-icons-gif.flaticon.com/8722/8722697.gif', completed: false},
